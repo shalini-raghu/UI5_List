@@ -1,0 +1,25 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZUSERINFO_344_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="ZUSERINFO_344" sap:content-version="1">
+				<Key><PropertyRef Name="User_Id"/></Key><Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Client" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="User_Id" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="user id" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="First_Name" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="First name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Last_Name" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Last name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="email" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Phone" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Phone number" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Country" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Country" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZUC_E" sap:content-version="1">
+				<Key><PropertyRef Name="CustomerName"/><PropertyRef Name="Activity"/><PropertyRef Name="Manual"/><PropertyRef Name="CmoTool"/></Key><Property Name="CustomerName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Customer Name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Activity" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Activity" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Manual" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="2" sap:unicode="false" sap:label="Manual"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CmoTool" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="2" sap:unicode="false" sap:label="CMO Tool"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZUSERINFO_344_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZUSERINFO_344Set" EntityType="ZUSERINFO_344_SRV.ZUSERINFO_344" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="UserCollection" EntityType="ZUSERINFO_344_SRV.ZUSERINFO_344" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="ZUC_ESet" EntityType="ZUSERINFO_344_SRV.ZUC_E" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZUSERINFO_344_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZUSERINFO_344_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

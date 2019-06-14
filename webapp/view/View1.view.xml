@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Sample_ui5_for_list.UI5_list.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					    <List noDataText="Drop list items here" id="list0" items="{path:'/ZUSERINFO_344Set',parameters:{select:'First_Name,Last_Name,Email,Phone'}}">
+					        <items>
+					            <StandardListItem type="Navigation" title="{First_Name}{Last_Name}" description="{Email}" id="item0"/>
+					            
+					        </items>
+					    </List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
